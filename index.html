@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 0.6875rem;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg">
+      <img class="bg__top" src="images/bg-pattern-top.svg" alt="" />
+      <img class="bg__bottom" src="images/bg-pattern-bottom.svg" alt="" />
+    </div>
+    <main class="wrapper">
+      <div class="card">
+        <div class="card__container">
+          <img
+            src="images/bg-pattern-card.svg"
+            alt="bg-pattern-card"
+            class="bg__pattern"
+          />
+          <img
+            class="image__victor"
+            src="images/image-victor.jpg"
+            alt="image-victor"
+          />
+        </div>
+
+        <h2 class="card__name">Victor Crest <span>26</span></h2>
+
+        <p class="card__location">London</p>
+        <hr />
+        <div class="card__info">
+          <div class="card__stat">
+            <h2>80K</h2>
+            <p>Followers</p>
+          </div>
+          <div class="card__stat">
+            <h2>803K</h2>
+            <p>Likes</p>
+          </div>
+          <div class="card__stat">
+            <h2>1.4K</h2>
+            <p>Photos</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/valerii-tarasenko">VALERII</a>.
+    </footer>
+  </body>
+</html>

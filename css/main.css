@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
+  isolation: isolate;
+  font-family: "Heebo", sans-serif;
+}
+
+p {
+  color: gray;
+}
+
+span {
+  color: gray;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 24px 0 0;
+}
+
+.bg {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.bg__top,
+.bg__bottom {
+  position: absolute;
+}
+
+.bg__top {
+  top: -530px;
+  left: -300px;
+}
+
+.bg__bottom {
+  bottom: -630px;
+  right: -220px;
+}
+
+.wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  z-index: 2;
+  text-align: center;
+  width: 350px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.card__container {
+  position: relative;
+}
+
+.bg__pattern {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  display: block;
+}
+
+.image__victor {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.card__name {
+  margin-top: 60px;
+  font-size: 1.1rem;
+}
+
+.card__location {
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+.card__stat {
+  text-align: center;
+}
+
+.attribution {
+  position: relative;
+  z-index: 2;
+  padding: 8px;
+}
+
+@media (max-width: 387px) {
+  .card {
+    width: 85%;
+  }
+
+  .bg__top {
+    top: -550px;
+    left: -731px;
+  }
+
+  .bg__bottom {
+    bottom: -550px;
+    right: -720px;
+  }
+}
