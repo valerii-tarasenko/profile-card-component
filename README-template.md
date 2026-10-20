@@ -14,7 +14,6 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
   - [Useful resources](#useful-resources)
   - [AI Collaboration](#ai-collaboration)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -40,41 +39,28 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+In this project, I gained a better understanding of CSS element positioning. Specifically, I learned how `position: absolute` works in relation to a parent with `position: relative`, how to position large decorative backgrounds outside the viewport using negative margins, and how to clip them using `overflow: hidden`. I also learned how to center an avatar that extends beyond the edge of a card header, without relying on pixel-based offsets:
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.card__container {
+  position: relative;
+}
+
+.image__victor {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Moving forward, I want to continue improving my knowledge of positioning (`absolute`, `relative`, `fixed`, `z-index`) and responsive layout—specifically Flexbox, media queries, and working with various screen sizes.
 
 ### AI Collaboration
 
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
-
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
+I used Claude to better understand how to position elements correctly. It helped me figure out why an image was overlapping the text, how to place background circles in the corners, and how to remove unwanted scrolling on the mobile version. The most effective approach was sending screenshots and code; Claude would explain the root cause of the issue rather than just providing a ready-made solution. Even so, the specific spacing values ​​still required manual fine-tuning in DevTools to match the design.
 
 ## Author
 
